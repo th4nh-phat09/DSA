@@ -1,0 +1,10 @@
+int A[5]
+A và &A là địa chỉ của phần tử A[0] có nghĩa là A=&A=&A[0];
+-Các phần tử của mảng là là một khối liên tiếp nhau như cdu trên là mỗi phần tử chứa bốn bit liên tiếp nhau nên tốc độ truy cập các phần tử của mảng rất nhanh mất O(1);
+-Khi truyền tham chiếu cho mảng trong hàm thì hàm chương trình sẽ tự động chuyển hóa mảng thành con trỏ để đỡ tốn bộ nhớ chứ không phải tạo ra một bản sao có kiểu dữ liệu bằng mảng
+-Duyệt mảng bằng pointer
+Ví dụ:
+int A[4]={1,2,3,4};
+
+for(int *ptr=A;ptr<A+4;ptr++)
+	cout<< *ptr;

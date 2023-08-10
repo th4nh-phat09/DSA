@@ -1,0 +1,19 @@
+-Cấp phát động trong c++:khi cấp phát động trong c++ thì memory sẽ tự động cấp phát vùng nhớ mà mình yêu cầu và nó sẽ đc quản lý bỏi một con trỏ.
++Cho một biến đơn:
+Ví dụ:
+int *ptr= new int{10}//cấp phát động một con trỏ kiểu int với giá trị là 10
+delete ptr// trả lại vùng nhớ cho hệ điều hành nhưng con trỏ vẫn còn trỏ tới vùng nhớ như cũ lnay con trỏ đc gọi là con trỏ lơ lửng;
+// khi truy cập con trỏ null hoặc con trỏ lơ lủng sẽ bị sập chương trình
+ptr=NULL //khi đó phải gán con trỏ bằng con trỏ NULL;
+-Lưu ý : Khi không sử dụng cấp phát động nữa thì phải trả lại bộ nhớ cho hệ điều hành và gán con trỏ =NULL để tránh việc rò rỉ bộ nhớ và truy cập vào con trỏ lơ lửng để ko bị sập bộ nhớ
++Cho một mảng động:
+Ví dụ:
+int length;
+cin>>length;
+int *ptr=new int[length];
+//mảng động có thể nhập số lượng phần tử cho mảng động nhưng cấp phát động thì phải cung cấp số lượng phần tử cho mảng
+// sử dụng mảng ptr như mảng tỉnh bth 
+//khi cấp phát động cho mảng động thì các phần tử của mảng sẽ không liên tiếp nhau mà lại nằm rải rác trong bộ nhớ
+delete[] ptr// trả lại vùng nhớ cho hệ điều hành
+ptr=NULL;
+-Có thể thay đổi kích thước của mạng động nhưng mà nên dùng vector

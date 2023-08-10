@@ -1,0 +1,12 @@
+khai báo : kdl *<tên con trỏ>
+Ví dụ :int *a là con trỏ a kiểu int
+-Một con trỏ sẽ chứa địa chỉ của một biến khác
+-&a sẽ là địa chỉ của con trỏ a
+-giá trị a là địa chỉ của biến
+-*a sẽ là giá trị của biến mà a trỏ tới
+-Nhiều con trỏ có thể trỏ tới cùng một biến nên chỉ cần thay đổi * tên con trỏ bất kì thì cũng sẽ thay đổi giá trị của biến
+-Đặc biệt đối với con trỏ struct muốn truy cập đến một biến cụ thể trong struct ta gõ theo cấu trúc ptr->tên biến với ptr là con trỏ chứa địa chỉ của biến struct
+-Phép toán trên pointer 
+ví dụ: int *ptr=&a;
+=> phép toán ptr+1 là địa chỉ gần nhất mà bộ nhớ tại đó chứa kiểu dữ liệu int
+=> phép toán ptr+i là địa chỉ thứ i sau ptr mà bộ nhớ tại đó chứ kiểu dữ liệu int
