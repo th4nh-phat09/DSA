@@ -38,16 +38,34 @@ void pushback(node **head,SV x)
 		temp=temp->next;
 	temp->next=newnode;
 }
+void sort(node *head)
+{
+	for(node *i=head;i->next!=NULL;i=i->next)
+		{
+			node *minnode=i;
+			for(node *j=i->next;j!=NULL;j=j->next)
+				if(minnode->data.tuoi>j->data.tuoi)
+			       swap(minnode->data,j->data);
+		}
+}
 int main()
 {
-	SV a,b;
+	SV a,b,c,d;
 	a.name="phat";
 	a.tuoi=19;
 	b.name="nguyen";
 	b.tuoi=29;
+	c.name="phatdddd";
+	c.tuoi=12;
+	d.name="ngdduyen";
+	d.tuoi=23;
 	node *head=NULL;
 	pushback(&head,a);
 	pushback(&head,b);
+	pushback(&head,c);
+	pushback(&head,d);
+	//duyet(head);
+	sort(head);
 	duyet(head);
 	return 0;
 }
