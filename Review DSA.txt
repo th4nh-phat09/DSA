@@ -1,0 +1,13 @@
+1.C++ STL
+-set,map,string,vector,pair,auto,...
+-sort,comparator,binary search,...
+-mảng cộng dồn,mảng hiệu,sàn nguyên tố
+-Hai con trỏ,cửa sổ trượt,...
+2.Thuật toán
+-sinh,quay lui,nhánh cận
+-tham lam
+-chia và trị
+-quy hoạch động
+-sắp xếp và tìm kiếm
+3.CTDL
+-graph,stack,queue,binary tree,cây phân đoạn,fenwick,linked list,...

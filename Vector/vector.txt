@@ -1,0 +1,22 @@
+-Khai báo :vector<kdl> tên 
+VD: vector<int> v;
+-các hàm hay dùng  trong vector :
++size()
++empty()
++push_back()
++pop_back()
++clear()//xoas toàn bộ phần tử của vector
++erase(vtri);//O(n)
++insert(vtri,val);//O(n)
+Chú thích :vtri là vị trí mà iterator trỏ đến trong vector;
+-ITERATOR trong vector:
+VDU: 
+vector<int> v(6,100);
+vector<int>::iterator it=
++v.begin() là đang trỏ tới vị trí 0,muốn truy cập tới giá trị mà iterrator đang trỏ đến thì ta gox
+: *it//100
++v.end() là đang trỏ tới vị trí sau vị trí cuối cúng(6)
++v.rbegin là đang trỏ tới vị trí vị trí cuối cúng(5)
++v.rend() là đang trỏ tới trước vị trí đầu tiên
++v.begin()+x là đang trỏ tới vị trí thứ x của vector;
+-Có thể dùng hàm sort,cmp cho vector

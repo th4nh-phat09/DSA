@@ -1,0 +1,3 @@
+-Khai báo thì tương tự như set nma multiset thì cho các phần tử lặp lại ,còn unorder set thì ko sxep các ptu
+-Muốn xóa ptu trong multiset thì phải dùng iterator trỏ đến ptu đó r xóa chứ nếu erase(val) thì sẽ xóa hết all các phần tử có giá trị là val trong multiset,O(logn) nhuw set ddoois voiws multiset
+-unorderset thif tùy case mà độ phức tạp từ 1->n;

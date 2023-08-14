@@ -1,0 +1,11 @@
+-SET là một ctdl trong mà set không cho lưu các phần tử giống nhau và sắp xếp theo thứ tự tăng dần
+-Một số hàm trong set:
++insert(val);
++erase(iterator or val);
+//Nếu là val thì nó sẽ xóa hết all ptu có giá trị val ,còn nếu là iterator thì nếu chỉ xóa ptu mà iterator đang trỏ đến
++size();
++find(val)//trả về iterator đang trỏ đến val nếu tìm thấy,còn ko thì trả về end();
++count(val)//trả về số lượng mà val xuất hiện trong set
+//ALL các thao tác trên set đều O(logn)
++empty();//O(1)
+-Iterator trong set chỉ ++i đc thôi ko cho phép cộng nhìu hơn 

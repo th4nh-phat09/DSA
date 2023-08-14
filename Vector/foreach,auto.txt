@@ -1,0 +1,25 @@
+FOREACH:
+Example:+c1:
+vector<int> v(n,100); 
+for(int i=0;i<=v.size();i++)
+		cout<<v[i]<<" ";
+=+c2:
+vector<int> v(n,100); 
+for(int i: v)
+	cout<<i<<" ";
+-Nếu truyền tham chiếu trong foreach thì thay đổi cả giá trị gốc
+Vdu:
+vector<int> v(3,100); //100 100 100
+for(int &i: v)
+       i=200;
+for(int i: v)
+	cout<<i<<" ";//200 200 200
+AUTO:
+-Khi khai báo auto cho một biến nào đó thì phải gán cho biến có kiểu nhất định để cho auto nó định hình đc kiểu dữ liệu cho biến khai báo
+VDU1:
+int k 
+auto v=k;
+thì ct nó sẽ tự hiểu v có kdl là int vì k có kdl là int
+VDU2:
+vector<int> v(3,100);
+vector<int>::iterator it=v.begiṇ();
