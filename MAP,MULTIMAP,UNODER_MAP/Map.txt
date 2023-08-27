@@ -1,0 +1,14 @@
+-khai báo :map<kdl1.kdl2>
+EX: map<int,int>s;
+kdl trong map gọi là key và chỉ có 1 key đc trùng trong map thôi
+-mp[key]=kdl 2;
+-Một số hàm trong map:
++insert(̣{val1,val2});
++erase(iterator or key);
+//Nếu là key thì nó sẽ xóa hết all ptu có giá trị key ,còn nếu là iterator thì nếu chỉ xóa ptu mà iterator đang trỏ đến
++size();
++find(key)//trả về iterator đang trỏ đến val nếu tìm thấy,còn ko thì trả về end();
++count(key)//trả về số lượng mà val xuất hiện trong set
+//ALL các thao tác trên map đều O(logn)
++empty();//O(1)
+-Iterator trong map chỉ ++i đc thôi ko cho phép cộng nhìu hơn 

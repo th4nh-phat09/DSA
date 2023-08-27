@@ -1,0 +1,3 @@
+-Khai báo thì tương tự như set nma multimap thì cho các phần tử lặp lại ,còn unorder_map thì ko sxep các ptu
+-Muốn xóa ptu trong multimap thì phải dùng iterator trỏ đến ptu đó r xóa chứ nếu erase(map) thì sẽ xóa hết all các phần tử có giá trị là val trong multimap,O(logn) nhuw set đối với multimap
+-unordermap thì tùy case mà độ phức tạp của hàm find từ 1->n;
